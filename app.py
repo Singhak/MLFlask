@@ -45,5 +45,5 @@ def predict():
         return render_template('home.html', prediction_text='Please enter valid text meaasage.')
 
 
-if __name__ == '__main__':
-    app.run(debug=True)
+# if __name__ == '__main__':
+#     app.run(debug=True)

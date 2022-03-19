@@ -1,0 +1,51 @@
+.textbox {
+  border: 1.5px solid royalblue;
+  border-radius: 18px;
+}
+
+.textcentre {
+  text-align: center;
+}
+
+body {
+  background: lightsteelblue;
+}
+.btn {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 16px;
+  padding-right: 16px;
+  font-size: medium;
+  border: 1px;
+  border-radius: 4px;
+  background-color: cornflowerblue;
+  width: 100px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: cadetblue;
+}
+.container {
+  position: absolute;
+  top: 15%;
+  left: 18%;
+}
+
+.blink {
+  animation: blink 1s infinite;
+  text-align: center;
+  font-size: xx-large;
+  margin: 16px;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

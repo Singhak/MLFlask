@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home</title>
+    <!-- <link rel="stylesheet" type="text/css" href="../static/css/styles.css"> -->
+    <link rel="stylesheet" type="text/css" href="../static/css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h2 class="textcentre">Spam Detector For SMS Messages</h2>
+      </header>
+
+      <form action="{{ url_for('predict')}}" method="POST" class="textcentre">
+        <p>Enter Your Message Here</p>
+        <!-- <input type="text" name="comment"/> -->
+        <textarea name="message" rows="5" cols="100" class="textbox"></textarea>
+        <br />
+
+        <input type="submit" class="btn" value="predict" />
+      </form>
+      <div class="blink">{{ prediction_text }}</div>
+    </div>
+  </body>
+</html>
